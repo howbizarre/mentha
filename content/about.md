@@ -6,4 +6,4 @@ navigation:
   icon: 'eva:at-outline'
 ---
 
-# Контакти
+# КОНТАКТИ

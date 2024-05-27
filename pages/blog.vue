@@ -4,6 +4,6 @@ useHead({ title: 'Блог' });
 
 <template>
   <main>
-    <h1>Блог</h1>
+    <h1>{{ _t('БЛОГ') }}</h1>
   </main>
 </template>
