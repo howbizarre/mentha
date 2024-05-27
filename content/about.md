@@ -1,9 +1,9 @@
 ---
-title: 'За мен'
+title: 'Контакти'
 description: 'meta description of the page'
 navigation:
-  title: 'За мен'
-  icon: 'eva:person-outline'
+  title: 'Контакти'
+  icon: 'eva:at-outline'
 ---
 
-# About Content
+# Контакти

@@ -14,9 +14,14 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <Navbar />
-    <NuxtPage />
+  <div class="flex justify-start h-svh">
+    <div class="p-5 bg-white drop-shadow-2xl fixed h-full left-0 top-0">
+      <Navbar />
+    </div>
+
+    <div class="p-5 w-full ml-[60px] sm:ml-[140px]">
+      <NuxtPage />
+    </div>
   </div>
 </template>
 
