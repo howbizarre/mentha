@@ -1,13 +1,18 @@
 <template>
-  <main>
+  <main class="content">
     <ContentDoc>
-      <template v-slot="{ doc }">
+      <template #doc>
         <article>
           <ContentRenderer :value="doc" />
         </article>
       </template>
+
       <template #not-found>
-        <h1>Document not found</h1>
+        <h2>Document not found</h2>
+      </template>
+      
+      <template #empty>
+        <h2>Document is empty</h2>
       </template>
     </ContentDoc>
   </main>

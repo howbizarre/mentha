@@ -1,12 +1,10 @@
 ---
 title: 'Efficiens dixit matris artus sit comites pleno'
 description: 'meta description of the page'
-date: '2024-05-26'
+date: '2024-05-27T12:14:00.771Z'
 ---
 
 # Efficiens dixit matris artus sit comites pleno
-
-## Qua se labor ignes ponat suo
 
 Lorem markdownum Bacchum liquefacta sive praetentaque delapsus pia coctilibus
 licet parte! Deo lacrimis altera; ars pede aliena talia, nemus tibi venis. Opus
@@ -16,6 +14,8 @@ ad, tamquam, non [ignem per](http://visam-urbem.net/arcehaut) qua *cornua
 consilii fulmina* rapiam peiora, nec.
 
 <!-- more -->
+
+## Qua se labor ignes ponat suo
 
 - Mater pepulere membris
 - Labor Somne viribus
