@@ -1,6 +1,12 @@
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/color-mode"],
 
+  content: {
+    highlight: {
+      theme: "github-dark",
+    },
+  },
+
   app: {
     head: {
       charset: "utf-8",

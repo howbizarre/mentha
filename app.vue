@@ -15,14 +15,12 @@ useHead({
 
 <template>
   <div class="flex flex-row">
-    <div class="h-dvh p-5 bg-gray-50 dark:bg-gray-950 drop-shadow-2xl sticky top-0 left-0">
+    <div class="h-lvh p-5 bg-gray-50 dark:bg-gray-950 drop-shadow-2xl sticky top-0 left-0">
       <Navbar />
     </div>
 
-    <div class="w-full h-auto p-5">
-      <div class="prose dark:prose-invert">
-        <NuxtPage />
-      </div>
+    <div class="w-full p-5 prose dark:prose-invert overflow-hidden">
+      <NuxtPage />
     </div>
   </div>
 </template>

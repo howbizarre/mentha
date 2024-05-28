@@ -1,10 +1,8 @@
 <template>
-  <div class="w-full">
+  <div>
     <ContentDoc>
       <template #doc>
-        <article>
-          <ContentRenderer :value="doc" style="max-width: 100% !important;overflow: hidden !important; background-color: red !important;" />
-        </article>
+        <ContentRenderer :value="doc" />
       </template>
 
       <template #not-found>

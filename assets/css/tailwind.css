@@ -21,6 +21,4 @@ h4 { @apply text-base; }
 
 .prose {
   @apply max-w-full;
-
-  pre, code { @apply !w-full !max-w-full !m-0 !p-0 overflow-x-auto overflow-y-hidden; }
 }
