@@ -1,30 +1,40 @@
 <template>
-  <nav>
-    <ContentNavigation v-slot="{ navigation }">
-      <ul>
-        <li>
-          <NuxtLink to="/" class="nav-link flex items-center justify-center sm:justify-end h-8">
-            <span class="hidden sm:inline-block">{{ _t('Начало') }}</span>
-            <Icon name="eva:home-outline" size="18" class="sm:ml-1" />
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/blog" class="nav-link flex items-center justify-center sm:justify-end h-8">
-            <span class="hidden sm:inline-block">{{ _t('Блог') }}</span>
-            <Icon name="eva:book-open-outline" size="18" class="sm:ml-1" />
-          </NuxtLink>
-        </li>
-      </ul>
-    </ContentNavigation>
+  <nav class="flex flex-col justify-between h-full">
+    <ul>
+      <li>
+        <NuxtLink to="/" class="nav-link flex items-center justify-center sm:justify-end h-8">
+          <span class="hidden sm:block">{{ _t('Home') }}</span>
+          <Icon name="eva:home-outline" size="18" class="sm:ml-1" />
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/about" class="nav-link flex items-center justify-center sm:justify-end h-8">
+          <span class="hidden sm:block">{{ _t('About') }}</span>
+          <Icon name="material-symbols:account-circle-full" size="18" class="sm:ml-1" />
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/blog" class="nav-link flex items-center justify-center sm:justify-end h-8">
+          <span class="hidden sm:block">{{ _t('Blog') }}</span>
+          <Icon name="eva:book-open-outline" size="18" class="sm:ml-1" />
+        </NuxtLink>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <ColorMode />
+      </li>
+    </ul>
   </nav>
 </template>
 
 <style>
 .nav-link {
-  @apply font-sans text-xl text-gray-400 hover:text-gray-950 transition-colors duration-200;
+  @apply font-sans font-semibold text-sm text-gray-600 dark:text-gray-400 hover:text-gray-950 hover:dark:text-gray-50 transition-colors duration-200;
 
   &.router-link-active {
-    @apply text-gray-950;
+    @apply text-gray-950 dark:text-gray-50;
   }
 }
 </style>

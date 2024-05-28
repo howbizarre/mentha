@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "nuxt-icon"],
+  modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/color-mode"],
 
   app: {
     head: {
@@ -12,7 +12,7 @@ export default defineNuxtConfig({
           rel: "preload",
           as: "style",
           onload: "this.onload = null; this.rel = 'stylesheet';",
-          href: "https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Spectral:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap",
+          href: "https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap",
         },
       ],
     },
@@ -20,6 +20,14 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "slide", mode: "out-in" },
   },
+
+  tailwindcss: {
+    cssPath: ["~/assets/css/tailwind.css", { injectPosition: "first" }],
+    configPath: "tailwind.config",
+    viewer: false,
+  },
+
+  colorMode: { classSuffix: "" },
 
   devtools: { enabled: false },
 });

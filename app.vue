@@ -5,7 +5,7 @@ useHead({
     { name: 'viewport', content: "width=device-width, initial-scale=1" }
   ],
   titleTemplate(titleChunk) {
-    return titleChunk && titleChunk !== 'Начало' ? `${titleChunk} | Нана` : "Нана | Свежа дива мента";
+    return titleChunk ? `${titleChunk} | Mentha` : "Mentha | Fresh your Mint";
   },
   htmlAttrs: {
     lang: "bg"
@@ -14,41 +14,13 @@ useHead({
 </script>
 
 <template>
-  <div class="flex justify-start h-svh">
-    <div class="p-5 bg-white drop-shadow-2xl fixed h-full left-0 top-0">
+  <div class="flex flex-row">
+    <div class="h-dvh p-5 bg-gray-50 dark:bg-gray-950 drop-shadow-2xl sticky top-0 left-0">
       <Navbar />
     </div>
 
-    <div class="p-5 w-full block ml-[60px] sm:ml-[110px]">
+    <div class="w-full p-5">
       <NuxtPage />
     </div>
   </div>
 </template>
-
-<style>
-html, body, table, input { @apply font-serif; }
-h1, h2, h3, h4, h5, h6, .lead-text { @apply font-sans; }
-
-h1 { @apply text-4xl; }
-h2 { @apply text-3xl; }
-h3 { @apply text-2xl; }
-h4 { @apply text-xl; }
-h5 { @apply text-lg; }
-h6 { @apply text-base; }
-
-.page-enter-active, .page-leave-active { transition: all 0.3s ease-in-out; }
-
-.page-enter-from, .page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-  transform: scale(0.95);
-}
-
-.layout-enter-active, .layout-leave-active { transition: all 0.3s ease-in-out; }
-
-.layout-enter-from, .layout-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-  transform: scale(0.95);
-}
-</style>

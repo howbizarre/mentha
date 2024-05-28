@@ -6,8 +6,8 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       fontFamily: {
-        serif: ["Spectral", "serif"],
-        sans: ["Sofia Sans Condensed", "sans-serif"],
+        serif: ["Noto Serif Display", "serif"],
+        sans: ["Comfortaa", "sans-serif"],
       },
     },
   },
