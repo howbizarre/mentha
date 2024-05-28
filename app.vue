@@ -19,7 +19,7 @@ useHead({
       <Navbar />
     </div>
 
-    <div class="p-5 w-full ml-[60px] sm:ml-[140px]">
+    <div class="p-5 w-full block ml-[60px] sm:ml-[110px]">
       <NuxtPage />
     </div>
   </div>

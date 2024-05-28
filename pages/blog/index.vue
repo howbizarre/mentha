@@ -6,7 +6,9 @@ useHead({ title: 'Блог' });
 <template>
   <main>
     <template v-for="article in articles" :key="article._path">
-      <ContentRendererMarkdown :value="article" />
+      <div @click="navigateTo(article._path)" class="cursor-pointer">
+        <ContentRendererMarkdown :value="article.excerpt" />
+      </div>
 
       <hr class="my-5 border-gray-200" />
     </template>
