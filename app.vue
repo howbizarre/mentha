@@ -19,8 +19,10 @@ useHead({
       <Navbar />
     </div>
 
-    <div class="w-full p-5">
-      <NuxtPage />
+    <div class="w-full h-auto p-5">
+      <div class="prose dark:prose-invert">
+        <NuxtPage />
+      </div>
     </div>
   </div>
 </template>

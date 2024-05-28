@@ -1,11 +1,13 @@
 <script lang="ts" setup>
-const articles = await queryContent('blog').sort({ date: -1 }).limit(3).find();
+const articles = import.meta.dev
+               ? await queryContent('blog').sort({ date: -1 }).limit(3).find()
+               : await queryContent('blog').where({ draft: false }).sort({ date: -1 }).limit(3).find();
 
 useHead({ title: 'ReFresh my Mint' });
 </script>
 
 <template>
-  <main class="container">
+  <div class="w-full">
     <h1 class="mb-10">
       <Icon name="file-icons:mint" size="64" class="mr-1 text-teal-500" />
       {{ _t('ReFresh my Mint') }}
@@ -22,5 +24,5 @@ useHead({ title: 'ReFresh my Mint' });
         </div>
       </template>
     </template>
-  </main>
+  </div>
 </template>
