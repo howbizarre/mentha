@@ -2,19 +2,19 @@
   <nav class="flex flex-col justify-between h-full">
     <ul>
       <li>
-        <NuxtLink to="/" class="nav-link flex items-center justify-center sm:justify-end h-8">
+        <NuxtLink to="/" class="nav-link flex items-center justify-center sm:justify-end h-10">
           <span class="hidden sm:block">{{ _t('Home') }}</span>
           <Icon name="eva:home-outline" size="18" class="sm:ml-1" />
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/about" class="nav-link flex items-center justify-center sm:justify-end h-8">
+        <NuxtLink to="/about" class="nav-link flex items-center justify-center sm:justify-end h-10">
           <span class="hidden sm:block">{{ _t('About') }}</span>
-          <Icon name="material-symbols:account-circle-full" size="18" class="sm:ml-1" />
+          <Icon name="eva:at-outline" size="18" class="sm:ml-1" />
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/blog" class="nav-link flex items-center justify-center sm:justify-end h-8">
+        <NuxtLink to="/blog" class="nav-link flex items-center justify-center sm:justify-end h-10">
           <span class="hidden sm:block">{{ _t('Blog') }}</span>
           <Icon name="eva:book-open-outline" size="18" class="sm:ml-1" />
         </NuxtLink>
