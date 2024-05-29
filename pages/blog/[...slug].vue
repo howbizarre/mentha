@@ -7,10 +7,12 @@ const { data: surround } = await useAsyncData(`[slug-${slug.value}]`, () => {
   return import.meta.dev
     ? queryContent()
       .only(['title', '_path', 'date'])
+      .sort({ date: -1 })
       .findSurround(path, { before: 1, after: 1 })
     : queryContent()
       .where({ draft: false })
       .only(['title', '_path', 'date'])
+      .sort({ date: -1 })
       .findSurround(path, { before: 1, after: 1 })
 }, { default: () => [] });
 
