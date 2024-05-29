@@ -8,11 +8,13 @@ const hasLoad = computed(() => countContent > paginatedContent.value.length);
 const showLoad = ref(false);
 
 const paginateData = async (limit: number = 3, skip: number = 0) => {
-  if (import.meta.dev) return await queryContent(path)
-    .sort({ date: -1 })
-    .limit(limit)
-    .skip(skip)
-    .find();
+  if (import.meta.dev) {
+    return await queryContent(path)
+      .sort({ date: -1 })
+      .limit(limit)
+      .skip(skip)
+      .find();
+  }
 
   return await queryContent(path)
     .where({ draft: false })
@@ -34,11 +36,10 @@ onMounted(async () => {
   showLoad.value = true;
 });
 
-const articles = import.meta.dev
-  ? await queryContent('blog').sort({ date: -1 }).limit(3).find()
-  : await queryContent('blog').where({ draft: false }).sort({ date: -1 }).limit(3).find();
-
-useHead({ title: 'ReFresh my Mint' });
+useHead({
+  title: "Mentha Freshener",
+  meta: [{ name: "description", content: "Demo with some number of Articles on Mentha Nuxt Blog Template" }]
+});
 </script>
 
 <template>
@@ -46,25 +47,7 @@ useHead({ title: 'ReFresh my Mint' });
     <H1 :text="_t('Mentha Freshener')" />
 
     <template v-for="article, cnt in paginatedContent" :key="article._path">
-      <template v-if="article.excerpt">
-        <div @click.capture="navigateTo(article._path)" class="cursor-pointer relative" :class="{ 'mb-10': ((cnt + 1) < articles.length) }">
-
-          <div class="hover:bg-gray-50 dark:hover:bg-gray-950 rounded-tr-3xl rounded-br-3xl p-5 -ml-5 transition-colors duration-300 ease-in-out">
-            <ClientOnly><small>{{ articleLocaleDate(article.date) }}</small></ClientOnly>
-            <ContentRendererMarkdown :value="article.excerpt" />
-          </div>
-        </div>
-      </template>
-
-      <template v-else>
-        <div @click.capture="navigateTo(article._path)" class="cursor-pointer relative" :class="{ 'mb-10': ((cnt + 1) < articles.length) }">
-
-          <div class="hover:bg-gray-50 dark:hover:bg-gray-950 rounded-tr-3xl rounded-br-3xl p-5 -ml-5 transition-colors duration-300 ease-in-out">
-            <ClientOnly><small>{{ articleLocaleDate(article.date) }}</small></ClientOnly>
-            <h1>{{ article.title }}</h1>
-          </div>
-        </div>
-      </template>
+      <Article :article="article" :last="((cnt + 1) < paginatedContent.length)" />
     </template>
 
     <template v-if="showLoad && hasLoad">

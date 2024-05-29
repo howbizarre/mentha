@@ -8,7 +8,7 @@ useHead({
     return titleChunk ? `${titleChunk} | Nuxt Blog Template` : "Mentha | Nuxt Blog Template";
   },
   htmlAttrs: {
-    lang: "bg"
+    lang: "en"
   }
 });
 </script>
