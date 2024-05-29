@@ -19,7 +19,7 @@ useHead({
       <Navbar />
     </div>
 
-    <div class="w-full p-5 prose dark:prose-invert overflow-hidden">
+    <div class="w-full sm:max-w-[1024px] p-5 prose dark:prose-invert overflow-hidden">
       <NuxtPage />
     </div>
   </div>
