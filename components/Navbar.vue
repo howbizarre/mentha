@@ -23,6 +23,12 @@
 
     <ul>
       <li>
+        <NuxtLink to="https://github.com/howbizarre/mentha" target="_blank" class="nav-link flex items-center justify-center sm:justify-end h-10">
+          <span class="hidden sm:block">{{ _t('GitHub') }}</span>
+          <Icon name="mdi:github" size="18" class="sm:ml-1" />
+        </NuxtLink>
+      </li>
+      <li>
         <ColorMode />
       </li>
     </ul>

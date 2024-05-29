@@ -43,10 +43,7 @@ useHead({ title: 'ReFresh my Mint' });
 
 <template>
   <div>
-    <h1 class="-indent-20 ml-20">
-      <Icon name="file-icons:mint" size="64" class="mr-1 text-teal-500" />
-      {{ _t('ReFresh my Mint') }}
-    </h1>
+    <H1 :text="_t('Mentha Freshener')" />
 
     <template v-for="article, cnt in paginatedContent" :key="article._path">
       <template v-if="article.excerpt">

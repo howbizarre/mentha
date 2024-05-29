@@ -5,7 +5,7 @@ useHead({
     { name: 'viewport', content: "width=device-width, initial-scale=1" }
   ],
   titleTemplate(titleChunk) {
-    return titleChunk ? `${titleChunk} | Mentha` : "Mentha | Fresh your Mint";
+    return titleChunk ? `${titleChunk} | Nuxt Blog Template` : "Mentha | Nuxt Blog Template";
   },
   htmlAttrs: {
     lang: "bg"
