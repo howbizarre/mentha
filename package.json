@@ -1,6 +1,6 @@
 {
   "name": "@howbizarre/mentha",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "This boilerplate is based on Nuxt 3 with Nuxt Content. TypeScript support and TailwindCSS for styling. Added Nuxt Color Mode module for Dark and Light theme. Nuxt Icon module and TailwindCSS Typography Plugin have also been added.",
   "homepage": "https://mentha.bizarre.how/",
   "license": "CC-BY-4.0",

@@ -63,6 +63,10 @@ PROJECT MENTHA
         tsconfig.json
 ```
 
+## Next Steps
+
+To develop and extend the template, it is good to add a state manager. I highly recommend [**Pinia**](https://pinia.vuejs.org/, "Intuitive, type safe, light and flexible Store for Vue"), as it has a module for **Nuxt**. Add categories and tags for the articles. Allow users to comment. Pay attention (a lot) to <abbr title="Server Side Rendering">**SSR**</abbr> and <abbr title="Search Engin Optimization">**SEO**</abbr>. You can improve the pagination with additional information about the number of articles in the blog, etc. Read out the **Nuxt Content** documentation. Many things can be added, such as a **sitemap**, automated navigation building, etc.
+ 
 ## Changelog
 
 ### v0.2.1
