@@ -77,6 +77,12 @@ To develop and extend the template, it is good to add a state manager. I highly 
  
 ## Changelog
 
+### v0.2.2
+
+- Updated the index page
+- Added content to the **About** page
+- Added new MDC component for the **About** page with props & slots support
+
 ### v0.2.1
 
 - First public version

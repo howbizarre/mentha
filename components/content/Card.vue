@@ -1,10 +1,7 @@
 <script setup lang="ts">
-defineProps({
-  src: {
-    type: String,
-    default: 'https://www.gravatar.com/avatar/b4df506f43ebfc616c2ae9983ea69399ced4b86c669c628e6c057f14828df30e?s=200&d=identicon'
-  }
-})
+defineProps<{
+  src: string;
+}>();
 </script>
 
 <template>
