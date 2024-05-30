@@ -51,7 +51,7 @@ useHead({
     </template>
 
     <template v-if="showLoad && hasLoad">
-      <button @click="paginate" class="flex items-center px-5 pt-3 pb-2 -mb-5 mt-5 text-sm bg-gray-50 dark:bg-gray-950 hover:bg-gray-950 hover:dark:bg-gray-50 hover:text-white hover:dark:text-black transition-colors duration-300 rounded-tl-3xl rounded-tr-3xl float-end">
+      <button @click="paginate" class="flex items-center px-5 pt-3 pb-2 -mb-5 mt-5 text-sm bg-gray-50 dark:bg-gray-950 hover:bg-gray-950 hover:dark:bg-gray-50 hover:text-white hover:dark:text-black transition-colors duration-300 rounded-t-3xl float-end">
         <span>{{ _t('Load more articles') }}</span>
         <Icon name="eva:arrowhead-down-fill" size="18" class="ml-2" />
       </button>

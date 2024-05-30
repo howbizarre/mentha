@@ -10,9 +10,13 @@ Several **Nuxt** modules are used to make the Developer Experience (**DX**) more
 
 Additionally, the **TailwindCSS** plugin [**Typography**](https://github.com/tailwindlabs/tailwindcss-typography "Beautiful typographic defaults for HTML you don't control.") has been added to automate content styling.
 
+:hrline
+
 ## Required Knowledge
 
 To use the template, it is good to know how to [download it from GitHub](https://github.com/howbizarre/mentha, "Download template from GitHub repository"). The template has releases you can use out of the box by extracting them to your disk. Then it is good to know how to work with [**NPM**](https://www.npmjs.com/, "Node Package Manager") to install the necessary packages and be able to start the project. Need to know [**Markdown**](https://www.markdownguide.org/ "Markdown Guide") syntax and [**Nuxt directory structure**](https://nuxt.com/docs/guide/directory-structure "Nuxt directory structure"). Familiarity with **Vue & Vue Router** and **TailwindCSS** would be good.
+
+:hrline
 
 ## Directory structure
 
@@ -63,9 +67,13 @@ PROJECT MENTHA
         tsconfig.json
 ```
 
+:hrline
+
 ## Next Steps
 
 To develop and extend the template, it is good to add a state manager. I highly recommend [**Pinia**](https://pinia.vuejs.org/, "Intuitive, type safe, light and flexible Store for Vue"), as it has a module for **Nuxt**. Add categories and tags for the articles. Allow users to comment. Pay attention (a lot) to <abbr title="Server Side Rendering">**SSR**</abbr> and <abbr title="Search Engin Optimization">**SEO**</abbr>. You can improve the pagination with additional information about the number of articles in the blog, etc. Read out the **Nuxt Content** documentation. Many things can be added, such as a **sitemap**, automated navigation building, etc.
+
+:hrline
  
 ## Changelog
 

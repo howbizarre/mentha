@@ -8,5 +8,6 @@ useHead({
 <template>
   <div>
     <H1 :text="_t('Ma Mentha')" />
+    <ContentDoc />
   </div>
 </template>
