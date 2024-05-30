@@ -1,3 +1,5 @@
+# Mentha - Nuxt Blog Template
+
 This is a blog template powered by [**Nuxt**](https://nuxt.com "The Intuitive
 Vue Framework") framework. The name of the template is **Mentha**. Currently, it uses **version 3**, but it will also support future versions. Versions lower than 3 will not be supported. The template is developed with [**Vue Composition API**](https://vuejs.org/guide/extras/composition-api-faq.html "Composition API FAQ"), with the `setup` in the `script` tag - `<script setup lang="ts"></script>` and [**TypeScript**](https://www.typescriptlang.org/ "Typed JavaScript") support.
 
@@ -63,7 +65,23 @@ PROJECT MENTHA
         tsconfig.json
 ```
 
+## Features
+
+There is a function added in `composables/utils.js` that takes a `string` and returns it (the same) back. The function name is `_t`. All strings in the template go through this function. The only purpose of this feature is to easily find all the strings that need to be translated if you add other languages ​​to the template.
+
+There is also a function in `composables/utils.js` that converts an **ISO** date to a readable date. The function is called `articleLocaleDate`. It is only demonstratively added and is subject to additional efforts on your part. Date localization is an important process, so consider it carefully.
+
+## Next Steps
+
+To develop and extend the template, it is good to add a state manager. I highly recommend [**Pinia**](https://pinia.vuejs.org/, "Intuitive, type safe, light and flexible Store for Vue"), as it has a module for **Nuxt**. Add categories and tags for the articles. Allow users to comment. Pay attention (a lot) to <abbr title="Server Side Rendering">**SSR**</abbr> and <abbr title="Search Engin Optimization">**SEO**</abbr>. You can improve the pagination with additional information about the number of articles in the blog, etc. Read out the **Nuxt Content** documentation. Many things can be added, such as a **sitemap**, automated navigation building, etc.
+ 
 ## Changelog
+
+### v0.2.2
+
+- Updated the index page
+- Added content to the **About** page
+- Added new MDC component for the **About** page with props & slots support
 
 ### v0.2.1
 
