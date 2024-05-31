@@ -8,7 +8,11 @@ useHead({
 <template>
   <div>
     <H1 :text="_t('Mentha - Nuxt Blog Template')" />
-    <ContentDoc />
+    <ContentDoc>
+      <template #not-found>
+        <h2>Document not found</h2>
+      </template>
+    </ContentDoc>
     <div class="text-center">Live long and prosper 🖖</div>
   </div>
 </template>
