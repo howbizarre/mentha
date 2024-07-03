@@ -1,5 +1,12 @@
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/color-mode", "@nuxthq/studio"],
+  modules: [
+    "@nuxt/content",
+    "@nuxtjs/tailwindcss",
+    "nuxt-icon",
+    "@nuxtjs/color-mode",
+    "@nuxthq/studio",
+    "@nuxt/image"
+  ],
 
   content: {
     highlight: {
@@ -34,6 +41,6 @@ export default defineNuxtConfig({
   },
 
   colorMode: { classSuffix: "" },
-
   devtools: { enabled: false },
+  compatibilityDate: "2024-07-03",
 });
