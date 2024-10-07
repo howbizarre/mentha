@@ -1,6 +1,6 @@
 {
   "name": "@howbizarre/mentha",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "This boilerplate is based on Nuxt 3 with Nuxt Content. TypeScript support and TailwindCSS for styling. Added Nuxt Color Mode module for Dark and Light theme. Nuxt Icon module and TailwindCSS Typography Plugin have also been added.",
   "homepage": "https://mentha.bizarre.how/",
   "license": "CC-BY-4.0",
@@ -39,10 +39,10 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.13.2",
-    "@nuxt/image": "^1.8.0",
+    "@nuxt/image": "^1.8.1",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.13.2",
-    "vue": "^3.5.10",
+    "vue": "^3.5.11",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {

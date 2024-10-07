@@ -85,6 +85,11 @@ To develop and extend the template, it is good to add a state manager. I highly 
  
 ## Changelog
 
+### v0.2.3
+
+- Added new blog post to Getting Started.
+- Update dependencies to the latest versions.
+
 ### v0.2.2
 
 - Updated the index page
