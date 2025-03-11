@@ -15,7 +15,7 @@ useHead({
 
 <template>
   <div class="flex flex-row">
-    <div class="h-lvh p-5 bg-gray-50 dark:bg-gray-950 drop-shadow-2xl sticky top-0 left-0">
+    <div class="h-lvh p-5 bg-gray-50 dark:bg-gray-950 shadow-xl dark:shadow-gray-600 sticky top-0 left-0">
       <Navbar />
     </div>
 
